@@ -4,52 +4,42 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- displays site properly based on user's device -->
 
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="css/style.css">
 
 	<title>Frontend Mentor | Stats preview card component</title>
-
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/card.css">
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/about.css">
-	<link rel="stylesheet" href="css/information.css">
-	<link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
-	<main class="container">
-		<section class="card">
-			<div class="card__image"></div>
+	<main class="card">
+		<div class="card__img">
+			<img src="images/image-header-desktop.jpg" alt="Three women working on their laptops">
+			<div class="card__overlay"></div>
+		</div>
 
-			<article class="card__body">
-				<div class="about">
-					<h1 class="about__title">Get <span>insights</span> that help your business grow.</h1>
-					<p class="about__description">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+		<article class="card__body">
+			<div class="about">
+				<h1 class="about__title">Get <span>insights</span> that help your business grow.</h1>
+				<p class="about__description">Discover the benefits of data analytics and make better decisions regarding revenue,
+					customer experience, and overall efficiency.</p>
+			</div>
+		
+			<div class="information">
+				<div class="information__content">
+					<h2 class="information__title">10k+</h2>
+					<p class="information__description">companies</p>
 				</div>
-
-				<div class="information">
-					<div class="information__content">
-						<h2 class="information__title">10k+</h2>
-						<p class="information__description">companies</p>
-					</div>
-					<div class="information__content">
-						<h2 class="information__title">314</h2>
-						<p class="information__description">templates</p>
-					</div>
-					<div class="information__content">
-						<h2 class="information__title">12m+</h2>
-						<p class="information__description">queries</p>
-					</div>
+				<div class="information__content">
+					<h2 class="information__title">314</h2>
+					<p class="information__description">templates</p>
 				</div>
-			</article>
-		</section>
-
-		<div class="attribution">
-			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="attribution__link">Frontend Mentor</a>. Coded by <a href="https://github.com/instmi" class="attribution__link">instmi</a>.
-		</div>		
+				<div class="information__content">
+					<h2 class="information__title">12M+</h2>
+					<p class="information__description">queries</p>
+				</div>
+			</div>
+		</article>
 	</main>
-
 </body>
 </html>
