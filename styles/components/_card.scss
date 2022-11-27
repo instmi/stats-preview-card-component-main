@@ -1,0 +1,116 @@
+@import '../abstract/variables';
+
+.card {
+   background-color: $card-background-color;
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+   margin: 5.5rem 0;
+   width: 87vw;
+
+   @media screen and (min-width: 1440px) {
+      flex-direction: row-reverse;
+      width: 77vw;
+   }
+
+   > * {
+      flex-basis: 50%;
+   }
+
+   &__image {
+      position: relative;
+      
+      picture, source, img {
+         display: block;
+         width: 100%;
+      }
+
+      img {
+         border-radius: 8px 8px 0 0;
+
+         @media screen and (min-width: 1440px) {
+            border-radius: 0 8px 8px 0px;
+         }
+      }
+
+      > div {
+         background-color: hsl(278deg 94% 24% / 78%);
+         bottom: 0;
+         left: 0;
+         opacity: 0.8;
+         position: absolute;
+         right: 0;
+         top: 0;
+      }
+
+   }
+   &__content {
+      padding: 0 2rem;
+      text-align: center;
+
+      @media screen and (min-width: 1440px) {
+         text-align: left;
+         padding: 40px 10px 0 70px;
+      }
+
+      h1 {
+         color: $heading-color;
+         font-size: $heading-font-size;
+         font-weight: $font-bold;
+         margin: 38px 0 1rem 0;
+
+         @media screen and (min-width: 1440px) {
+            font-size: 38px;
+            margin-right: 1rem;
+            margin-bottom: 2rem;
+         }
+
+         span {
+            color: $accent-color;
+         }
+      }
+
+      p {
+         line-height: 1.5rem;
+
+         @media screen and (min-width: 1440px) {
+            margin-right: 5.5rem;
+            font-size: 16px;
+         }
+      }
+
+      ul {
+         margin: 40px 0;
+
+         @media screen and (min-width: 1440px) {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 8rem 0 0;
+         }
+
+         li {
+            list-style-type: none;
+            margin: 2rem 0;
+
+            span {
+               display: block;
+               margin: 4px 0;
+               
+
+               &:first-child {
+                  color: $heading-color;
+                  font-size: 24px;
+                  font-weight: $font-bold;
+               }
+
+               &:nth-child(2) {
+                  color: $stats-heading-color;
+                  font-size: 12px;
+                  letter-spacing: 1px;
+                  text-transform: uppercase;
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,21 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+$regular-font-family: 'Inter', sans-serif;
+$special-font-family: 'Lexend Deca', sans-serif;
+
+$font-regular: 400;
+$font-bold: 700;
+
+$regular-font-size: 15px;
+$heading-font-size: 28px;
+
+// Colors
+$background-color: hsl(233, 47%, 7%);
+$card-background-color: hsl(244, 38%, 16%);
+
+$heading-color: hsl(0, 0%, 100%);
+$paragraph-color: hsla(0, 0%, 100%, 0.75);
+$stats-heading-color: hsla(0, 0%, 100%, 0.6);
+
+$accent-color: hsl(277, 64%, 61%);

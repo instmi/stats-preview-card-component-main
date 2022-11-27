@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(233deg, 47%, 7%);
+  color: hsla(0deg, 0%, 100%, 0.75);
+  display: grid;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  min-height: 100vh;
+  place-content: center;
+}
+
+.card {
+  background-color: hsl(244deg, 38%, 16%);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin: 5.5rem 0;
+  width: 87vw;
+}
+@media screen and (min-width: 1440px) {
+  .card {
+    flex-direction: row-reverse;
+    width: 77vw;
+  }
+}
+.card > * {
+  flex-basis: 50%;
+}
+.card__image {
+  position: relative;
+}
+.card__image picture, .card__image source, .card__image img {
+  display: block;
+  width: 100%;
+}
+.card__image img {
+  border-radius: 8px 8px 0 0;
+}
+@media screen and (min-width: 1440px) {
+  .card__image img {
+    border-radius: 0 8px 8px 0px;
+  }
+}
+.card__image > div {
+  background-color: hsla(278deg, 94%, 24%, 0.78);
+  bottom: 0;
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.card__content {
+  padding: 0 2rem;
+  text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  .card__content {
+    text-align: left;
+    padding: 40px 10px 0 70px;
+  }
+}
+.card__content h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 28px;
+  font-weight: 700;
+  margin: 38px 0 1rem 0;
+}
+@media screen and (min-width: 1440px) {
+  .card__content h1 {
+    font-size: 38px;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+.card__content h1 span {
+  color: hsl(277deg, 64%, 61%);
+}
+.card__content p {
+  line-height: 1.5rem;
+}
+@media screen and (min-width: 1440px) {
+  .card__content p {
+    margin-right: 5.5rem;
+    font-size: 16px;
+  }
+}
+.card__content ul {
+  margin: 40px 0;
+}
+@media screen and (min-width: 1440px) {
+  .card__content ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 8rem 0 0;
+  }
+}
+.card__content ul li {
+  list-style-type: none;
+  margin: 2rem 0;
+}
+.card__content ul li span {
+  display: block;
+  margin: 4px 0;
+}
+.card__content ul li span:first-child {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 24px;
+  font-weight: 700;
+}
+.card__content ul li span:nth-child(2) {
+  color: hsla(0deg, 0%, 100%, 0.6);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */
